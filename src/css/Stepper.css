@@ -1,0 +1,33 @@
+.stepper{
+    border: 1px solid red;
+    position: relative;
+    background-image: url(../images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .stepper-item-wrapper{
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+} */
+
+.wrapper{
+    display: flex;
+}
+
+.stepper-number{
+    border: 1px solid white;
+    padding: .3rem;
+    border-radius: 50%;
+    margin-right: .75rem;
+    color: var(--Light-gray);
+}
+
+.stepper-number.active{
+    background-color: var(--Light-blue);
+    color: black;
+}
