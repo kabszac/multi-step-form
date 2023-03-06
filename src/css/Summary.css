@@ -1,0 +1,66 @@
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plan-addons{
+    background-color: var(--Light-gray);
+    border-radius: .75rem;
+}
+
+.plan-addons, .total{
+    padding: 1rem;
+}
+
+.plan, .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan{
+    margin-bottom: 1rem;
+}
+
+.plan-name{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.plan-name, .plan-price{
+    color: var(--Marine-blue);
+}
+
+.change button{
+    border: none;
+    background-color: var(--Light-gray);
+    text-decoration-line: underline;  
+}
+
+.addons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item, .item-price{
+    margin-bottom: .5rem;
+}
+
+.item-price{
+    color: var(--Marine-blue);
+    font-family: var(ff-sec);
+    font-size: .9rem;
+}
+
+.total-name, .item, .change button{
+    color: rgb(133, 133, 133);
+}
+
+.total-price{
+    color: var(--Purplish-blue);
+}
+
+
+@media (min-width:50rem){}

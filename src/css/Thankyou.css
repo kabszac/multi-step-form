@@ -1,0 +1,26 @@
+.wrap-thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+}
+
+.wrap-thanks h1{
+    margin-bottom: 0;
+}
+.thanks-image img{
+    max-width: 100%;
+}
+
+@media (min-width:50rem){
+    .wrap-thanks{
+        margin-top: 5rem;
+    }
+
+    .thanks-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

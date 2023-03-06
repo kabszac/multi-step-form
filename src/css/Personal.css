@@ -1,0 +1,106 @@
+.personal-info-wrapper{
+    background-color: var(--Marine-blue);
+}
+
+.personal-info{
+    padding: 1rem 1.5rem;
+    width: 80%;
+    border-radius: .5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 7rem;
+    background-color: var(--White);
+}
+
+.personal-info h1{
+    margin-top: 0rem;
+    color: var(--Marine-blue);
+}
+
+.personal-info p{
+    font-size: var(--fs-p);
+    color: rgb(133, 133, 133);
+    margin-bottom: 1.5rem;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .75rem;
+}
+
+.form-control label{
+    font-family: var(ff-sec);
+    font-size: .75rem;
+    color: var(--Marine-blue);
+}
+
+input[type='text'],
+input[type='email']{
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+.Button{
+    background-color: var(--White);
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+.Button button{
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    padding: .5rem;
+    border-radius: .3rem;
+    display: none;
+}
+
+.label-error{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    color: var(--Strawberry-red);
+}
+
+.input-error{
+    border-color: var(--Strawberry-red);
+}
+
+.form-submit{
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+    background-color: var(--Marine-blue);
+    padding: .5rem;
+    color: var(--White);
+    border-radius: .3rem;
+}
+
+@media (min-width:50rem){
+    .personal-info{
+        position: static;
+        transform: translate(0, 0);      
+    }
+
+    .personal-info p{
+        margin-bottom: 3rem;
+    }
+
+    .form-control{
+        margin-bottom: 2rem;
+    }
+
+    .form-control label{
+        margin-bottom: .4rem;
+    }
+
+    .form-submit{
+        bottom: 5rem;
+        right: 1rem;
+        padding: .5rem 1rem;
+    }
+}

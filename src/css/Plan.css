@@ -1,0 +1,96 @@
+.lbl-radio{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid var(--Light-gray);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: .75rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.price{
+    color:rgb(133, 133, 133);
+}
+
+input[type='radio']:checked:after.lbl-radio {
+	border-color: var(--Purplish-blue);
+    background-color: var(--Pastel-blue);
+}
+
+input[type='radio'] {
+	display: none;
+}
+
+.plan-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+#checked{
+    border-color: var(--Purplish-blue);
+    background-color: var(--Pastel-blue);
+}
+
+p.toggle-active{
+    color: var(--Marine-blue);
+}
+
+.go-back{
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    background-color: var(--White);
+    padding: .5rem;
+    color: var(--Cool-gray);
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.go-back:hover{
+    color: var(--Marine-blue);
+}
+
+@media (min-width:50rem){
+    /* .plan-choice-wrap{
+        border: 1px solid red;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+    } */
+    .form-controls{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .lbl-radio{
+        flex-direction: column;
+        padding-right: 3rem;
+        cursor: pointer;
+    }
+    .plan-toggle{
+        justify-content: flex-start;
+        padding-left: 6rem;
+    }
+    .plan-toggle p{
+        padding-top: 1.4rem;
+
+    }
+
+    .go-back{
+        left: 1rem;
+        bottom: 5rem;
+    }
+
+}

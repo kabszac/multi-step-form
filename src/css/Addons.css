@@ -1,0 +1,37 @@
+input[type='checkbox']:checked.lbl-radio {
+	border-color: var(--Purplish-blue);
+    background-color: var(--Pastel-blue);
+}
+
+input[type='checkbox']{
+    opacity: 1;
+}
+
+#checks{
+    border: 1.5px solid var(--Purplish-blue);
+}
+
+
+.markers{
+    position: absolute; 
+    padding-top: .75rem;
+    padding-left: .34rem;
+}
+.no-markers{
+    display: none;
+}
+
+input[type='checkbox'].no-show{
+    opacity: 0;
+}
+
+.lbl-radios{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--Light-gray);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: .75rem;
+}
+
+@media (min-width:50rem){}

@@ -1,5 +1,4 @@
 .stepper{
-    border: 1px solid red;
     position: relative;
     background-image: url(../images/bg-sidebar-mobile.svg);
     background-size: cover;
@@ -9,11 +8,6 @@
     align-items: center;
 }
 
-/* .stepper-item-wrapper{
-    display: flex;
-    border: 1px solid red;
-    flex-direction: row;
-} */
 
 .wrapper{
     display: flex;
@@ -24,10 +18,85 @@
     padding: .3rem;
     border-radius: 50%;
     margin-right: .75rem;
+    width: 1.5rem;
+    height: 1.5rem;
     color: var(--Light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stepper-number.active{
     background-color: var(--Light-blue);
     color: black;
+}
+
+.stepper-desktop{
+    display: none;
+}
+
+@media (min-width:50rem){
+    .stepper{
+        display: none;
+    }
+    .stepper-desktop{
+        display: flex;
+        background-image: url(../images/bg-sidebar-desktop.svg);
+        flex-direction: column;
+        background-size: cover;
+        padding:0 4rem;
+        padding-bottom: 25.5rem;
+        padding-top: 0rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: .5rem;
+
+    }
+    .stepper-desktop-grp{
+        display: flex;
+        gap: 1rem;
+        padding: .5rem .75rem;
+        /* border: 1px solid green; */
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .stepper-info p{
+        margin: 0;
+    }
+
+    .stepper-number{
+        margin-right: 0;
+    }
+
+    .stepper-step-count{
+        font-family: var(--ff-sec);
+        color: var(--Light-gray);
+        font-size: .75rem;
+    }
+
+    .stepper-step-name{
+        color: var(--White);
+        white-space: nowrap;
+    }
+
+    #active-desktop1{
+        background-color: var(--Light-blue);
+        color: black;
+    }
+
+    #active-desktop2{
+        background-color: var(--Light-blue);
+        color: black;
+    }
+    #active-desktop3{
+        background-color: var(--Light-blue);
+        color: black;
+    }
+    #active-desktop4{
+        background-color: var(--Light-blue);
+        color: black;
+    }
+
 }
