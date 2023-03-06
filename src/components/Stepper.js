@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import '../css/Stepper.css'
 import { FormContext } from '../App';
-import { mobile } from '../images';
+
 
 
 const Stepper = () => {
