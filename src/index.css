@@ -36,6 +36,10 @@ body{
 
 @media (min-width:50rem){
   body{
-    background-color: var(--White);
+    background-color: var(--Magnolia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
   }
 }

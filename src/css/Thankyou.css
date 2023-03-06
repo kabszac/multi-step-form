@@ -6,6 +6,19 @@
     padding: 2.5rem 1rem;
 }
 
+.personal-infos{
+    border: 1px solid red;
+}
+
+.wrap-thanks-p p{
+    margin: 0;
+    
+}
+
+.wrap-thanks-p{
+    margin-top: .5rem;
+}
+
 .wrap-thanks h1{
     margin-bottom: 0;
 }
@@ -16,11 +29,21 @@
 @media (min-width:50rem){
     .wrap-thanks{
         margin-top: 5rem;
+        /* border: 2px solid green; */
+        padding: 0;
     }
 
+    .wrap-thanks-p{
+        /* border: 1px solid red; */
+        word-wrap: break-word;
+    }
+
+    .wrap-thanks-p p{
+        margin: 0;
+    }
     .thanks-desktop{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
     }
 }

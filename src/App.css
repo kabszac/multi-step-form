@@ -4,5 +4,7 @@
         display: flex;
         padding: 2rem;
         gap: 2rem;
+        background-color: var(--White);
+        border-radius: 1rem;
     }
 }
