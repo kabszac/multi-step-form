@@ -11,6 +11,7 @@
     transform: translate(-50%, 0);
     top: 7rem;
     background-color: var(--White);
+    margin-top: 3rem;
 }
 
 .personal-info h1{
